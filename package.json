@@ -1,0 +1,31 @@
+{
+  "name": "usdc-anywhere",
+  "version": "0.1.0",
+  "description": "Chain-abstracted USDC payment system with x402 protocol - ETHGlobal HackMoney 2026",
+  "private": true,
+  "workspaces": [
+    "packages/backend",
+    "packages/frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "backend": "npm run dev -w packages/backend",
+    "frontend": "npm run dev -w packages/frontend",
+    "setup": "npm install && npm run build"
+  },
+  "keywords": [
+    "x402",
+    "usdc",
+    "arc",
+    "cross-chain",
+    "payment",
+    "coinbase"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
